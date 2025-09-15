@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menu | Stardust</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lora&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="stardust images/Sorino cut.png" alt="Stardust & Quill Logo">
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html" class="active">Our Menu</a>
+      <a href="books.html">Books</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO BANNER -->
+  <section class="hero">
+  <div class="video-container">
+    <iframe 
+      src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1&mute=1&loop=1&playlist=0-GOfe_Wm2U" 
+      frameborder="0" 
+      allow="autoplay; fullscreen" 
+      allowfullscreen>
+    </iframe>
+  </div>
+  <div class="overlay"></div>
+  <div class="hero-text">
+    <h2>Our Commitment</h2>
+    <p>We proudly source from local farms and ethical roasters. Every sip and bite supports sustainability and fair trade practices.</p>
+  </div>
+</section>
+
+<div class="menu-tabs">
+  <a href="#HotCoffees">Hot Coffees</a>
+  <a href="#Teas">Teas</a>
+  <a href="#IcedCoffees">Iced Coffees</a>
+  <a href="#OtherDrinks">Other Drinks</a>
+  <a href="#Pastries">Pastries</a>
+</div>
+
+  <!-- MENU GRID -->
+   
+ <section id="HotCoffees" class="menu-section-HotCoffee">
+  <h2><span>OUR</span> <span>HOT COFFEES</span></h2>
+  <div class="menu-collage-HotCoffee">
+    <div class="hotcoffee1" onclick="openModal('espresso')"><img src="stardust images/espresso.jpg" alt="Double Espresso"></div>
+    <div class="hotcoffee2" onclick="openModal('americano')"><img src="stardust images/americano.jpg" alt="Cafe Americano"></div>
+    <div class="hotcoffee3" onclick="openModal('latte')"><img src="stardust images/latte.jpg" alt="latte"></div>
+    <div class="hotcoffee4" onclick="openModal('macchiato')"><img src="stardust images/machiatto.jpg" alt="macchiato"></div>
+    <div class="hotcoffee5" onclick="openModal('mocha')"><img src="stardust images/mocha.jpg" alt="mocha"></div>
+    <div class="hotcoffee6" onclick="openModal('cappuccino')"><img src="stardust images/cappuccino.jpg" alt="cappuccino"></div>
+    <div class="hotcoffee7" onclick="openModal('affogato')"><img src="stardust images/affogato.jpg" alt="affogato"></div>
+    <div class="hotcoffee8"><img src="stardust images/another coffee.jpg" alt="another coffee?"><div>
+  </div>
+</section>
+
+
+ <section id="Teas" class="menu-section-Tea">
+  <h2><span>OUR</span> <span>TEAS</span></h2>
+  <div class="menu-collage-Tea">
+    <div class="tea1" onclick="openModal('blacktea')"><img src="stardust images/black tea 2.jpg" alt="black tea"></div>
+    <div class="tea2" onclick="openModal('greentea')"><img src="stardust images/green tea.jpg" alt="green tea"></div>
+    <div class="tea3" onclick="openModal('milktea')"><img src="stardust images/milk tea.jpg" alt="milk tea"></div>
+    <div class="tea4" onclick="openModal('jasminetea')"><img src="stardust images/jasmine tea.jpg" alt="jasmine tea"></div>
+    <div class="tea5" onclick="openModal('lemontea')"><img src="stardust images/lemon tea.jpg" alt="lemon tea"></div>
+    <div class="tea6" onclick="openModal('strawberrytea')"><img src="stardust images/strawberry tea.jpg" alt="strawberry tea"></div>
+  </div>
+</section>
+
+
+ <section id="IcedCoffees" class="menu-section-IcedCoffee">
+  <h2><span>OUR</span> <span>ICED COFFEES</span></h2>
+  <div class="menu-collage-IcedCoffee">
+    <div class="icedcoffee1" onclick="openModal('icedespresso')"><img src="stardust images/iced espresso.jpg" alt="iced Espresso"></div>
+    <div class="icedcoffee2" onclick="openModal('icedamericano')"><img src="stardust images/iced americano.jpg" alt="iced Americano"></div>
+    <div class="icedcoffee3" onclick="openModal('icedlatte')"><img src="stardust images/iced latte.jpg" alt="iced latte"></div>
+    <div class="icedcoffee5" onclick="openModal('icedmocha')"><img src="stardust images/iced mocha.jpg" alt="iced cafe mocha"></div>
+    <div class="icedcoffee6" onclick="openModal('icedcappuccino')"><img src="stardust images/iced cappuccino.jpg" alt="iced cappuccino"></div>
+    <div class="icedcoffee7" onclick="openModal('frappe')"><img src="stardust images/frappe.jpg" alt="frappe"></div>
+    <div class="icedcoffee8" onclick="openModal('float')"><img src="stardust images/float.jpg" alt="float"></div>
+    <div class="icedcoffee9"><img src="stardust images/read coffee.jpg" alt="read coffee"></div>
+  </div>
+</section>
+
+
+ <section id="OtherDrinks" class="menu-section-OtherDrinks">
+  <h2><span>OUR</span> <span>OTHER DRINKS </span></h2>
+  <div class="menu-collage-OtherDrinks">
+    <div class="otherdrinks1" onclick="openModal('matcha')"><img src="stardust images/matcha.jpg" alt="matcha"></div>
+    <div class="otherdrinks2" onclick="openModal('milkshakes')"><img src="stardust images/milkshakes.jpg" alt="milkshakes"></div>
+    <div class="otherdrinks3" onclick="openModal('smoothies')"><img src="stardust images/smoothies.jpg" alt="smoothies"></div>
+    <div class="otherdrinks4" onclick="openModal('lemonades')"><img src="stardust images/lemonades.jpg" alt="lemonades"></div>
+    <div class="otherdrinks5" onclick="openModal('bobatea')"><img src="stardust images/bobba teas.jpg" alt="boba tea"></div>
+    <div class="otherdrinks6" onclick="openModal('icedtea')"><img src="stardust images/ice tea.jpg" alt="ice tea"></div>
+    <div class="otherdrinks7" onclick="openModal('juices')"><img src="stardust images/juices.jpg" alt="juices"></div>
+    <div class="otherdrinks8" onclick="openModal('hotchocolate')"><img src="stardust images/hot chocolate.jpg" alt="hot chocolate"><div>
+  </div>
+</section>
+
+
+ <section id="Pastries" class="menu-section-Pastries">
+  <h2><span>OUR</span> <span>PASTRIES</span></h2>
+  <div class="menu-collage-Pastries">
+    <div class="pastries1" onclick="openModal('croissants')"><img src="stardust images/croissant.jpg" alt="croissants"></div>
+    <div class="pastries2" onclick="openModal('pies')"><img src="stardust images/pies.jpg" alt="pies"></div>
+    <div class="pastries3" onclick="openModal('muffins')"><img src="stardust images/muffins.jpg" alt="muffins"></div>
+    <div class="pastries4" onclick="openModal('cinnamonrolls')"><img src="stardust images/cinnamon rolls.jpg" alt="cinnamon rolls"></div>
+    <div class="pastries5" onclick="openModal('brownies')"><img src="stardust images/brownies.jpg" alt="brownies"></div>
+    <div class="pastries6" onclick="openModal('cheescakes')"><img src="stardust images/cheescakes.jpg" alt="cheescakes"></div>
+    <div class="pastries7" onclick="openModal('cookies')"><img src="stardust images/cookies.jpg" alt="cookies"></div>
+    <div class="pastries8" onclick="openModal('danishes')"><img src="stardust images/danish.jpg" alt="danishes"><div>
+      danish
+  </div>
+</section>
+
+
+<!-- PRODUCT MODAL -->
+
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImg" src="" alt="">
+    <h2 id="modalName"></h2>
+    <p id="modalDesc"></p>
+    <p><strong>Flavors:</strong> <span id="modalFlavors"></span></p>
+    <p><strong>Price:</strong> $<span id="modalPrice"></span></p>
+  </div>
+</div>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Stardust · Crafted with love & starlight ✨</p>
+  </footer>
+
+
+
+  
+<script>"javascript/script.js"
+  const products = {
+    // Hot Coffees
+    espresso: {
+      name: "Espresso the Second",
+      desc: "A double potion of pure vigor, brewed dark as midnight ink.",
+      flavors: "Classic",
+      price: "3.50",
+      img: "stardust images/espresso.jpg"
+    },
+    americano: {
+      name: "The Dreamland",
+      desc: "The traveler’s draught: bold yet smooth, like a story retold.",
+      flavors: "Classic",
+      price: "3.00",
+      img: "stardust images/americano.jpg"
+    },
+    latte: {
+      name: "Nebula Latte",
+      desc: "A velvety chapter of espresso and milk, unfolding slowly with each sip.",
+      flavors: "Vanilla, Strawberry, Caramel, Chocolate, Lavander",
+      price: "4.50",
+      img: "stardust images/latte.jpg"
+    },
+    macchiato: {
+      name: "Cloudveil Macchiato",
+      desc: "A wisp of cloud drifting through bold espresso skies.",
+      flavors: "Classic, Caramel",
+      price: "3.80",
+      img: "stardust images/machiatto.jpg"
+    },
+    mocha: {
+      name: "Lover’s Spell Mocha",
+      desc: "Espresso blended with chocolate, a love story in a cup.",
+      flavors: "Dark Chocolate, White Chocolate",
+      price: "4.80",
+      img: "stardust images/mocha.jpg"
+    },
+    cappuccino: {
+      name: "Spellbound Cappuccino",
+      desc: "A morning spell of harmony: dark, frothy, and crowned with warmth.",
+      flavors: "Classic, Hazelnut",
+      price: "4.20",
+      img: "stardust images/cappuccino.jpg"
+    },
+    affogato: {
+      name: "Frostfire Affogato",
+      desc: "A forbidden romance: fire-hot espresso melting into cool, sweet cream.",
+      flavors: "Vanilla, Mocha",
+      price: "5.00",
+      img: "stardust images/affogato.jpg"
+    },
+
+    //Teas
+    blacktea: {
+    name: "Obsidian Tea",
+    desc: "A timeless classic, steeped like ancient parchment in obsidian ink.",
+    flavors: "classic",
+    price: "3.00",
+    img: "stardust images/black tea 2.jpg"
+    },
+    greentea: {
+      name: "Herbal brew",
+      desc: "Gentle leaves whispering secrets of spring and renewal.",
+      flavors: "classic",      
+      price: "3.00",
+      img: "stardust images/green tea.jpg"
+    },
+    milktea: {
+      name: "Royal's Silk Tea",
+      desc: "A comforting lullaby, warm and silken, perfect for twilight hours.",
+      flavors: "classic",
+      price: "4.50",
+      img: "stardust images/milk tea.jpg"
+    },
+    jasminetea: {
+      name: "Starbloom Jasmine Brew",
+      desc: "Blossoms and starlight entwined in fragrant poetry.",
+      flavors: "classic",
+      price: "3.80",
+      img: "stardust images/jasmine tea.jpg"
+    },
+    strawberrytea: {
+      name: "Crimson Berry Tea",
+      desc: "Sweet verses of summer fruit, steeped in crimson delight.",
+      flavors: "classic",
+      price: "4.80",
+      img: "stardust images/strawberry tea.jpg"
+    },
+    lemontea: {
+      name: "Golden Sunbeam Elixir",
+      desc: "A sunlit page turned crisp, with citrus ink that awakens the senses.",
+      flavors: "classic",
+      price: "4.20",
+      img: "stardust images/lemon tea.jpg"
+    },
+
+    //Iced Coffees
+    icedespresso: {
+    name: "Frosted Ember Esspresso",
+    desc: "Midnight fire, tempered in a crystal goblet of ice.",
+    flavors: "classic",
+    price: "3.00",
+    img: "stardust images/iced espresso.jpg"
+    },
+    icedamericano: {
+      name: "Nomad’s Chill Americano",
+      desc: "Cool clarity, as refreshing as a breeze through forgotten pages.",
+      flavors: "classic",      
+      price: "3.00",
+      img: "stardust images/iced americano.jpg"
+    },
+    icedlatte: {
+      name: "Daydream Frost Latte",
+      desc: "A chilled fable of cream and coffee, perfect for lazy afternoons.",
+      flavors: "Vanilla, Strawberry, Chocolate, Caramel, Lavander",
+      price: "4.50",
+      img: "stardust images/iced latte.jpg"
+    },
+    icedmocha: {
+      name: "Frozen Enchantment Mocha",
+      desc: "A frozen spell weaving cocoa and coffee into sweet enchantment.",
+      flavors: "White chocolate, Black chocolate",
+      price: "3.80",
+      img: "stardust images/iced mocha.jpg"
+    },
+    icedcappuccino: {
+      name: "Snowcrown Cappuccino",
+      desc: "Boldness crowned with frosty foam, like snow upon stone towers.",
+      flavors: "classic",
+      price: "4.80",
+      img: "stardust images/iced cappuccino.jpg"
+    },
+    frappe: {
+      name: "Frostswhirl Frappe",
+      desc: "A playful charm, whipped to life in frothy delight.",
+      flavors: "Caramel",
+      price: "4.20",
+      img: "stardust images/frappe.jpg"
+    },
+    float: {
+      name: "Creamsong Float",
+      desc: "A merry duet of espresso and cream, dancing atop ice.",
+      flavors: "Vanilla, Strawberry, Chocolate",
+      price: "4.20",
+      img: "stardust images/float.jpg"
+    },
+
+    //Other Drinks
+
+    matcha: {
+    name: "Emerald Leaf Elixir Matcha",
+    desc: "The emerald elixir of monks, calming yet powerful as ancient lore.",
+    flavors: "classic, Strawberry",
+    price: "5.00",
+    img: "stardust images/matcha.jpg"
+    },
+    milkshakes: {
+      name: "Creamyswhirl Milkshakes",
+      desc: "A creamy incantation, sweet and thick, swirling with enchantment.",
+      flavors: "Vanilla, Strawberry, Chocolate",      
+      price: "5.00",
+      img: "stardust images/milkshakes.jpg"
+    },
+    smoothies: {
+      name: "Fruitborne Charm Smoothies",
+      desc: "A chorus of fruits, blended like voices in a bard’s song.",
+      flavors: "Strawberry, Mango, Banana, blueberry, rasberry",
+      price: "5.50",
+      img: "stardust images/smoothies.jpg"
+    },
+    lemonades: {
+      name: "Sunlit Draught Lemonades",
+      desc: "Sunlight bottled, sharp and golden.",
+      flavors: "Classic, Strawberry",
+      price: "3.80",
+      img: "stardust images/lemonades.jpg"
+    },
+    bobatea: {
+      name: "Pearlbound Boba Tea",
+      desc: "A playful riddle in pearls, waiting to be discovered sip by sip.",
+      flavors: "classic, strawberry, chocolate",
+      price: "4.80",
+      img: "stardust images/bobba teas.jpg"
+    },
+    icedtea: {
+      name: "Amber Whisper Ice Teas",
+      desc: "Summer stories told in amber hues over tinkling ice.",
+      flavors: "Strawberry, Peach, Apple",
+      price: "3.20",
+      img: "stardust images/ice tea.jpg"
+    },
+    juices: {
+      name: "Fruitborne Charm Juices",
+      desc: "Nature’s manuscripts, pressed fresh upon the page of your glass.",
+      flavors: "Orange, Strawberry, Apple, Green",
+      price: "3.00",
+      img: "stardust images/juices.jpg"
+    },
+    hotchocolate: {
+      name: "Cocoa delight",
+      desc: "A tale of comfort: rich cocoa and warmth wrapped together.",
+      flavors: "classic",
+      price: "4.20",
+      img: "stardust images/hot chocolate.jpg"
+    },
+
+    //Pastries
+
+    croissants: {
+    name: "Golden Crescents Croissants",
+    desc: "Layers folded like ancient scrolls, crisp with buttery lore.",
+    flavors: "classic, Strawberry & cream, chocolate",
+    price: "4.00",
+    img: "stardust images/croissant.jpg"
+    },
+    pies: {
+      name: "Creamyswhirl Pies",
+      desc: "Sweet and rustic, baked with the warmth of old stories shared.",
+      flavors: "Apple, Strawberry, Rasberry, Blueberry",      
+      price: "5.00",
+      img: "stardust images/pies.jpg"
+    },
+    muffins: {
+      name: "Morning Prologue Muffins",
+      desc: "Soft little beginnings, flavored chapters of comfort.",
+      flavors: "Strawberry, Banana, blueberry, Chocolate",
+      price: "4.50",
+      img: "stardust images/muffins.jpg"
+    },
+    cinnamonrolls: {
+      name: "Spiral of Dawn Cinnamonrolls",
+      desc: "Sweet swirls unfurling like destiny written in sugar.",
+      flavors: "Classic",
+      price: "3.80",
+      img: "stardust images/cinnamon rolls.jpg"
+    },
+    brownies: {
+      name: "Obsidian Squares Brownies",
+      desc: "Dark and dense, a chewy relic of cocoa’s power.",
+      flavors: "classic",
+      price: "3.80",
+      img: "stardust images/brownies.jpg"
+    },
+    cheescakes: {
+      name: "Velour Verse Cheescakes",
+      desc: "Smooth as poetry sung at twilight, rich and silken.",
+      flavors: "Caramel",
+      price: "4.20",
+      img: "stardust images/cheescakes.jpg"
+    },
+    cookies: {
+      name: "Starlit Crumbs Cookies",
+      desc: "Golden morsels scattered like constellations across the table.",
+      flavors: "Vanilla, Strawberry, Chocolate",
+      price: "3.20",
+      img: "stardust images/cookies.jpg"
+    },
+    Danishes: {
+      name: "Fable Layers Danish",
+      desc: "Delicate tiers spun with cream, each bite a chapter revealed.",
+      flavors: "Strawberry, Blueberry",
+      price: "4.20",
+      img: "stardust images/danish.jpg"
+    },
+  };
+  
+
+  function openModal(productKey) {
+    const p = products[productKey];
+    if (!p) return;
+    document.getElementById("modalName").innerText = p.name;
+    document.getElementById("modalDesc").innerText = p.desc;
+    document.getElementById("modalFlavors").innerText = p.flavors;
+    document.getElementById("modalPrice").innerText = p.price;
+    document.getElementById("modalImg").src = p.img;
+    document.getElementById("productModal").style.display = "flex";
+  }
+
+  function closeModal() {
+    document.getElementById("productModal").style.display = "none";
+  }
+
+  
+</script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books | Stardust</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lora&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="stardust images/Sorino cut.png" alt="Stardust & Quill Logo">
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Our Menu</a>
+      <a href="books.html" class="active">Books</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero hero-books">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h2>Discover Rare & Magical Reads</h2>
+      <p>Every book holds a universe — find yours.</p>
+    </div>
+  </section>
+
+  <!-- FILTER & SEARCH -->
+  <section class="book-filters">
+    <input type="text" id="searchBar" placeholder="Search by title or author...">
+    <select id="genreFilter">
+      <option value="all">All Genres</option>
+      <option value="Fantasy">Fantasy</option>
+      <option value="mystery">Mystery</option>
+      <option value="sci-fi">Sci-Fi</option>
+      <option value="history">History</option>
+      <option value="romance">Romance</option>
+      <option value="Horror">Horror</option>
+    </select>
+  </section>
+
+  <!-- BOOK GRID -->
+  <section class="book-grid">
+    <div class="book-card"
+         data-title="The Tainted Cup"
+         data-author="Robert Jackson Bennett"
+         data-genre="Fantasy"
+         data-synopsis="A tale of infinite lives and choices..." 
+         data-rating="4.3" 
+         data-location="Fantasy, Row 3">
+      <img src="stardust images/book 1.jpg" alt="The Tainted Cup">
+      <h3>The Tainted Cup</h3>
+      <p>Robert Jackson Bennett</p>
+    </div>
+
+    <div class="book-card"
+         data-title="The Incandescent"
+         data-author="Emily Tesh"
+         data-genre="Fantasy"
+         data-synopsis="A tale of infinite lives and choices..." 
+         data-rating="4.0" 
+         data-location="Fantasy, Row 3">
+      <img src="stardust images/book 2.jpg" alt="The Incandescent">
+      <h3>The Incandescent</h3>
+      <p>Emily Tesh</p>
+    </div>
+    
+    <div class="book-card"
+         data-title="Onyx Storm"
+         data-author="Rebecca Yarros"
+         data-genre="Fantasy"
+         data-synopsis="A tale of infinite lives and choices..." 
+         data-rating="4.7" 
+         data-location="Fantasy, Row 3">
+      <img src="stardust images/book 3.jpg" alt="Onyx Storm">
+      <h3>Onyx Storm</h3>
+      <p>Rebecca Yarros</p>
+    </div>
+
+    <div class="book-card"
+         data-title="Witchcraft for Wayward Girls"
+         data-author="Grady Hendrix"
+         data-genre="Horror"
+         data-synopsis="A tale of infinite lives and choices..." 
+         data-rating="4.5" 
+         data-location="Horror, Row 6">
+      <img src="stardust images/book 4.jpg" alt="Witchcraft for Wayward Girls">
+      <h3>Witchcraft for Wayward Girls</h3>
+      <p>Grady Hendrix</p>
+    </div>
+
+    <div class="book-card"
+         data-title="The Raven Scholar"
+         data-author="Antonia Hodgson"
+         data-genre="Fantasy"
+         data-synopsis="A tale of infinite lives and choices..." 
+         data-rating="4.5" 
+         data-location="Fantasy, Row 5">
+      <img src="stardust images/book 5.jpg" alt="The Raven Scholar">
+      <h3>The Raven Scholar</h3>
+      <p>Antonia Hodgson</p>
+    </div>
+
+    <div class="book-card"
+         data-title="Metal Slinger"
+         data-author="Rachel Schneider"
+         data-genre="Fantasy"
+         data-synopsis="A tale of infinite lives and choices..." 
+         data-rating="4.5" 
+         data-location="Fantasy, Row 1">
+      <img src="stardust images/book 6.jpg" alt="Metal Slinger">
+      <h3>Metal Slinger</h3>
+      <p>Rachel Schneider</p>
+    </div>
+
+    <div class="book-card"
+         data-title="King of Envy"
+         data-author="Ana Huang"
+         data-genre="Romance"
+         data-synopsis="A tale of infinite lives and choices..." 
+         data-rating="4.1" 
+         data-location="Romance, Row 4">
+      <img src="stardust images/book 7.avif" alt="King of Envy">
+      <h3>King of Envy</h3>
+      <p>Ana Huang</p>
+    </div>
+
+    <div class="book-card"
+         data-title="Daughter of the Sun: A Mothmar Novel"
+         data-author="Amanda Auler"
+         data-genre="Fantasy"
+         data-synopsis="A tale of infinite lives and choices..." 
+         data-rating="4.4" 
+         data-location="Fantasy, Row 2">
+      <img src="stardust images/book 8.jpg" alt="Daughter of the Sun: A Mothmar Novel">
+      <h3>Daughter of the Sun: A Mothmar Novel</h3>
+      <p>Amanda Auler</p>
+    </div>
+
+    <div class="book-card"
+         data-title="Cosmic Tantrum: Poems"
+         data-author="Sarah Lyn Rogers"
+         data-genre="Poetry"
+         data-synopsis="A tale of infinite lives and choices..." 
+         data-rating="4.8" 
+         data-location="Poetry, Row 2">
+      <img src="stardust images/book 9.jpg" alt="Cosmic Tantrum: Poems">
+      <h3>Cosmic Tantrum: Poems</h3>
+      <p>Sarah Lyn Rogers</p>
+    </div>
+
+    <div class="book-card"
+         data-title="Beautiful Ugly"
+         data-author="Alice Feeney"
+         data-genre="Thriller"
+         data-synopsis="A tale of infinite lives and choices..." 
+         data-rating="3.6" 
+         data-location="Thriller, Row 4">
+      <img src="stardust images/book 10.jpg" alt="Beautiful Ugly">
+      <h3>Beautiful Ugly</h3>
+      <p>Alice Feeney</p>
+    </div>
+
+    <div class="book-card"
+         data-title="A Court of Thorns and Roses"
+         data-author="Sarah J. Maas"
+         data-genre="Fantasy"
+         data-synopsis="A tale of infinite lives and choices..." 
+         data-rating="3.6" 
+         data-location="Fantasy, Row 4">
+      <img src="stardust images/book 10.jpg" alt="A Court of Thorns and Roses">
+      <h3>A Court of Thorns and Roses</h3>
+      <p>Sarah J. Maas</p>
+    </div>
+
+    <div class="book-card"
+         data-title="Beloved"
+         data-author="Toni Morrison"
+         data-genre="Historical Fiction"
+         data-synopsis="A tale of infinite lives and choices..." 
+         data-rating="3.6" 
+         data-location="Fantasy, Row 4">
+      <img src="stardust images/book 11.jpg" alt="Beloved">
+      <h3>Beloved</h3>
+      <p>Toni Morrison</p>
+    </div>
+
+    <div class="book-card"
+         data-title="Dune Saga" 
+         data-author="Frank Herbert" 
+         data-genre="Sci-fi" 
+         data-synopsis="A sci-fi epic of power, politics, and desert destiny." 
+         data-rating="4.9" 
+         data-location="Sci-Fi, Row 1">
+      <img src="https://images.bwbcovers.com/044/Dune-9780441172719.jpg" alt="Dune">
+      <h3>Dune Saga</h3>
+      <p>Frank Herbert</p>
+    </div>
+
+    <div class="book-card"
+         data-title="Pride and Prejudice" 
+         data-author="Jane Austen" 
+         data-genre="Romance" 
+         data-synopsis="A sci-fi epic of power, politics, and desert destiny." 
+         data-rating="4.4" 
+         data-location="Romance, Row 3">
+      <img src="https://www.gutenberg.org/files/1342/1342-h/images/cover.jpg" alt="Pride and Prejudice">
+      <h3>Pride and Prejudice</h3>
+      <p>Jane Austen</p>
+    </div>
+
+    <div class="book-card"
+         data-title="Pet Sematary" 
+         data-author="Stephen King" 
+         data-genre="Horror" 
+         data-synopsis="A sci-fi epic of power, politics, and desert destiny." 
+         data-rating="4.1" 
+         data-location="Horror, Row 3">
+      <img src="https://m.media-amazon.com/images/I/81L0aIQ9zRL._UF1000,1000_QL80_.jpg" alt="Pride and Prejudice">
+      <h3>Pet Sematary</h3>
+      <p>Stephen King</p>
+    </div>
+
+    <!-- more books go here -->
+  </section>
+
+  <!-- MODAL -->
+  <!-- MODAL -->
+<div id="bookModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img id="bookImg" src="" alt="Book Cover"> 
+    <h2 id="bookTitle"></h2>
+    <h4 id="bookAuthor"></h4>
+    
+    <!-- Rating -->
+    <div class="rating">
+      <div id="bookStars"></div>
+      <span id="bookScore"></span>
+    </div>
+
+    <p id="bookSynopsis"></p>
+    <p><strong>Location:</strong> <span id="bookLocation"></span></p>
+  </div>
+</div>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Stardust · Crafted with love & starlight ✨</p>
+  </footer>
+
+<script src="javascript/books.js"></script>
+</body>
+</html>

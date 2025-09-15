@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Stardust</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lora&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="stardust images/Sorino cut.png" alt="Stardust & Quill Logo">
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Our Menu</a>
+      <a href="books.html">Books</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+ <section class="hero">
+  <div class="video-container">
+    <iframe 
+      src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1&mute=1&loop=1&playlist=0-GOfe_Wm2U" 
+      frameborder="0" 
+      allow="autoplay; fullscreen" 
+      allowfullscreen>
+    </iframe>
+  </div>
+  <div class="overlay"></div>
+  <div class="hero-text">
+    <h2>Get in Touch</h2>
+    <p>Reach out, we'd love to hear from you.</p>
+  </div>
+</section>
+
+
+  <!-- CONTACT CONTENT -->
+  <section class="contact-container">
+    <div class="our-info">
+      
+      <div class="hours-info">
+      <h3>Our Hours</h3>
+      <p><strong>Café:</strong> Mon–Sat: 8 AM – 8 PM</p>
+      <p><strong>Bookstore:</strong> Mon–Sat: 10 AM – 7 PM</p>
+      <p><em>Closed Sundays for rest & stargazing 🌌</em></p>
+      </div>
+
+      <div class="contact-info">
+      <h3>Contact Us</h3>
+      <p><strong>Phone:</strong> (123) 456-7890</p>
+      <p><strong>Email:</strong> hello@stardustquill.com</p>
+      </div>
+
+      <div class="social-links">
+        <h3>Follow Us</h3>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+        <a href="#"><img src=""</a>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <h3>Send Us a Message</h3>
+      <form id="contactForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="map">
+    <h3>Visit Us</h3>
+    <p>123 Starlight Lane, Victorian District</p>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1784912345!2d-122.42067968468172!3d37.77492977975979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ2JzMwLjAiTiAxMjLCsDI1JzE5LjAiVw!5e0!3m2!1sen!2sus!4v1612200000000!5m2!1sen!2sus" 
+      width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+
+  <!-- CONFIRMATION POPUP -->
+  <div id="contactConfirm" class="modal">
+    <div class="modal-content">
+      <h2 style="margin-left: 40px;"">✨ Message Sent!</h2>
+      <p style="margin-left: 210px;"">Thank you for reaching out — we’ll get back to you soon.</p>
+      <button id="closeContactConfirm" class="btn" style="margin-left: 350px;">Close</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Stardust · Crafted with love & starlight ✨</p>
+  </footer>
+
+  <script src="javascript/contact.js"></script>
+</body>
+</html>
