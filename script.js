@@ -35,7 +35,7 @@ document.querySelectorAll(".book-card").forEach(card => {
     modalAuthor.textContent = `by ${card.dataset.author}`;
     modalDescription.textContent = card.dataset.description;
 
-    // ⭐ Handle rating (supports decimals like 4.3, 4.8, etc.)
+    // ⭐ Handle rating 
     const rating = parseFloat(card.dataset.rating) || 0;
     const fullStars = Math.floor(rating);
     const hasHalfStar = rating % 1 >= 0.5;
@@ -44,7 +44,7 @@ document.querySelectorAll(".book-card").forEach(card => {
     // full stars
     stars += "★".repeat(fullStars);
 
-    // half star (Unicode: ☆ = empty, ⯨ alternative, or use a styled span)
+    // half star 
     if (hasHalfStar) stars += "⯨"; // looks like a half star
 
     // empty stars
@@ -69,5 +69,6 @@ window.addEventListener("click", e => {
 closeBtn.addEventListener("click", () => {
   modal.style.display = "none";
 });
+
 
 
